@@ -1,0 +1,43 @@
+/*import { useState, useEffect } from 'react'
+import './App.css'
+import { createClient } from "@supabase/supabase-js";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import CreatorList from './pages/CreatorList';
+import ViewCreator from './pages/ViewCreator';
+import EditCreator from './pages/EditCreator';
+import AddCreator from './pages/AddCreator';
+
+  const supabase = createClient("https://voavfmczlaepconeypvi.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZvYXZmbWN6bGFlcGNvbmV5cHZpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjM4MTk3MTYsImV4cCI6MjAzOTM5NTcxNn0.xNvo9Ms0RTq_tgakkqwxpBcXo6zL6U8LLY5eoFjteH0");
+
+
+function App() {
+  const [count, setCount] = useState(0)
+
+  const [creatorList, setCreatorVerse] = useState([]);
+
+    useEffect(() => {
+      getCreatorsList();
+    }, []);
+
+    async function getCreatorsList() {
+      console.log("============================================")     
+      const { data } = await supabase.from("creators").select();
+      console.log("===========>>>",data)
+//setCountries(data);
+    }
+
+  return (
+    <>
+       <Router>
+      <Routes>
+        <Route path="/" element={<CreatorList />} />
+        <Route path="/creator/:id" element={<ViewCreator />} />
+        <Route path="/edit/:id" element={<EditCreator />} />
+        <Route path="/add" element={<AddCreator />} />
+      </Routes>
+    </Router>
+    </>
+  )
+}
+
+export default App*/
