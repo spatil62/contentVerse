@@ -1,10 +1,6 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.js'
-import './index.css'
 
-createRoot(document.getElementById('root')).render(
-  //<StrictMode>
-    <App />
-  //</StrictMode>
-)
+
+
+console.log('This is a temporary main.js file by special one');
+
+
